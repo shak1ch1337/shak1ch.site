@@ -1,0 +1,20 @@
+services:
+  php:
+    build: ./app
+    ports:
+      - "80:80"
+    volumes:
+      - ./app:/var/www/html
+    user: www-data
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    ports:
+      - "5423:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_DB: shak1ch_db
+      POSTGRES_PASSWORD: root
+
+
