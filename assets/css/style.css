@@ -367,3 +367,18 @@ main h1 {
 .new_user_input:focus {
     border-bottom: 1px solid whitesmoke;
 }
+
+.skill_block {
+    margin: auto;
+    
+}
+
+.skills_add_btn {
+    margin: 30px auto;
+    width: 100%;
+    font-size: 22px;
+}
+
+.skill_block h2 {
+    margin-bottom: 20px;
+}
