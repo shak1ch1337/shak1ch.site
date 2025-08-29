@@ -1,0 +1,369 @@
+/*
+    Основные настройки
+*/
+
+* {
+    font-family: "Sulphur Point", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Tilt Neon", sans-serif;
+}
+
+body {
+    background: #000000;
+    background: linear-gradient(140deg,rgba(0, 0, 0, 1) 0%, rgba(13, 21, 33, 1) 50%, rgba(7, 14, 24, 1) 100%);
+    color: #FFFFFF;
+}
+
+main {
+    padding: 100px;
+}
+
+/*
+    Боковое меню
+*/
+
+.image_pforile {
+    text-align: center;
+}
+
+.image_pforile img{
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    margin-bottom: 40px;
+}
+
+.my_info {
+    margin-bottom: 40px;
+}
+
+.my_info ul li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.my_info_first {
+    font-size: 22px;
+    margin-right: 10px;
+    font-family: "Tilt Neon", sans-serif;
+}
+
+.society_info {
+    margin-bottom: 40px;
+}
+
+.society_info h2 {
+    text-align: center;
+}
+
+.society_links ul li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.social_images {
+    width: 10%;
+    height: 10%;
+    margin-right: 10px;
+}
+
+.society_links ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.society_links ul li a:hover {
+    color: #A6A6A6;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.skills_info {
+    text-align: center;
+}
+
+/*
+    accordeon
+*/
+
+.accordion-item {
+    border: transparent;
+    background-color: transparent;
+}
+
+.accordion-button {
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+.accordion-collapse {
+    color: white;
+    text-align: left;
+}
+
+/*
+    Основной блок с проетами
+*/
+
+.main_header {
+    text-align: center;
+}
+
+.main_header h1{
+    font-size: 48px;
+}
+
+.projects_block {
+    /*outline: 1px solid red;*/
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.projects_block_button {
+    font-size: 24px;
+    font-family: "Tilt Neon", sans-serif;
+    margin: 0px 10px;
+    color: #FFFFFF;
+    border: 0;
+    text-decoration: none;
+}
+
+.projects_block_button:hover {
+    color: #7e7e7e;
+    transition: all 0.5s;
+}
+
+.project_info_blocks {
+    margin-top: 50px;
+}
+
+.project_info {
+    margin-top: 20px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(344deg,rgba(22, 28, 64, 0.2) 0%, rgba(60, 64, 154, 0.2) 25%, rgba(139, 139, 167, 0.2) 50%, rgba(59, 63, 148, 0.2) 75%, rgba(8, 11, 28, 0.2) 100%);
+    border-image-slice: 1;
+    padding: 20px;
+    background: linear-gradient(148deg,rgba(27, 28, 85, 0.2) 0%, rgba(47, 40, 136, 0.2) 100%);
+
+}
+
+.project_info_bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.login_page {
+    height: 100vh;
+}
+
+.login_form {
+    width: 40%;
+    position: fixed;
+    top: 35%;
+    left: 40%;
+}
+
+.login_form label {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login_page_input {
+    display: block;
+    outline: none;
+    border: 0;
+    width: 50%;
+    font-size: 22px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: whitesmoke;
+    border-bottom: 1px solid darkgray;
+}
+
+.form-control:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 0;
+    
+}
+
+.login_page_input:focus, .login_page_input:active {
+    background-color: transparent;
+    outline: 0;
+    outline-offset: 0;
+    border-bottom: 1px solid white;
+    color: whitesmoke;
+}
+
+
+/*
+    Адаптив
+*/
+
+@media (max-width: 767px)
+{
+    .main_header h1 {
+        margin-top: 100px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 557px)
+{
+    .project_info {
+        min-width: 100%;
+    }
+
+    body {
+        height: 310vh;
+    }
+}
+
+@media (max-width: 454px)
+{
+    .email-link {
+        font-size: 14px;
+    }
+}
+
+/*
+    Admin panel
+*/
+
+main h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.avatar_img, .avatar_info {
+    text-align: center;
+}
+
+.avatar_img img {
+    width: 15%;
+    height: 15%;
+    border-radius: 100%;
+}
+
+.avatar_info h2{
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.form_photo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.photo_form {
+    display: block;
+}
+
+.photo_input {
+    width: 400px;
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 7px;
+    background-color: rgba(60, 64, 154, 0.2);
+    border-radius: 20px;
+}
+
+.photo_form_btn {
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 22px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(95, 102, 237, 0.4);
+    color: white;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.photo_form_btn:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(130, 58, 246, 0.4);
+}
+
+.admin_info {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.admin_info ul li {
+    font-size: 18px;
+    font-family: "Tilt Neon", sans-serif;
+    margin: 10px 0;
+}
+
+.add_btn {
+    margin: 40px 0;
+}
+
+.add_btn_link {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(95, 102, 237, 0.4);
+    border: 20px;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+}
+
+.add_btn_link:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(130, 58, 246, 0.4);
+    padding: 15px 20px;
+}
+
+/*
+    Table
+*/
+
+.table thead tr th, .table tbody td, .table tbody th{
+    background-color: transparent;
+    color: whitesmoke;
+    outline: 1px solid blue;
+}
+
+.table thead tr th {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.add_project_page {
+    height: 100vh;
+}
+
+.add_back {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.add_new_user_form {
+    width: 50%;
+    margin:auto;
+}
+
+.new_user_input {
+    display: block;
+    padding: 10px 15px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 22px;
+    border-bottom: 1px solid darkgray;
+    transition: all 0.5s ease;
+}
+
+.new_user_input:focus {
+    border-bottom: 1px solid whitesmoke;
+}
